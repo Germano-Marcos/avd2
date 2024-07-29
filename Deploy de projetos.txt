@@ -1,0 +1,141 @@
+0. Cria os projetos
+
+1. Cria a api backend
+
+
+
+2. Cria o app frontend
+2. Bildar o app frontend
+npm run build
+
+
+
+
+3. Cria um ropositório no site GITHUB
+
+4. Prepara e envia os arquivos do GIT para o GITHUB
+git init
+git add .
+git commit -m "primeiro envio"
+git remote add origin <caminho https do projeto>
+git push origin master
+
+4.1 Para atualizar o projeto do VSCode para o site do github
+git add .
+git commit -m "atualização"
+git push origin master
+
+
+
+
+5. Cria a conta na AWS
+
+6. Cria uma instância na AWS com o serviço EC2
+
+7. Criar a chave de acesso, armazenar e cuidar para não perder
+
+8. Clicar em conectar com a instância criada e seguir o passo a passo
+
+8.1. Instalar o OpenSSH
+https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=powershell
+
+8.2. Alterar as permissões para o arquivo chave pem para Ler e executar e Leitura. Isso é o que equilavale ao chmod 400...
+
+8.3 Executar o comando dado no passo 4 na pasta onde se encontra a chave
+
+
+
+
+
+9. Ja no servidor, executa estes comandos:
+
+ls -la
+sudo apt-get update
+sudo apt-get upgrade
+
+
+-Instala o Node.js no servidor
+https://github.com/nodesource/distributions/blob/master/README.md
+
+-Usando Ubuntu (Node.js 22)
+-Antes de começar, certifique-se de que curlestá instalado no seu sistema. Se curlnão estiver instalado, você pode instalá-lo usando o seguinte comando:
+sudo apt-get install -y curl
+
+-Baixe o script de configuração:
+curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+
+-Execute o script de configuração com sudo:
+sudo -E bash nodesource_setup.sh
+
+-Instalar Node.js:
+sudo apt-get install -y nodejs
+
+-Verifique a instalação:
+node -v
+
+-Verifica se o git já está instalado no servidor (geralmente já vem instalado)
+git -v
+
+-Vai no repositório no github, pega o caminho https e digita o seguinte comando no servidor (neste caso a pasta app é criada e os arquivos do projeto vão pra ela)
+git clone <caminho> app
+
+-Entra na pasta
+cd app/
+
+-Instala o NPM na pasta do projeto no servidor
+npm install
+
+- Na raiz do servidor, instala o pm2
+cd ..
+sudo npm install pm2 -g
+
+- Na raiz do servidor, instala o serve para servir o frontend
+sudo npm install -g serve
+
+-Verifica se o pm2 e o serve está inslado
+pm2 -v
+serve -v
+
+-Lista as aplicações que estão em execução
+pm2 list
+
+- Lembrar de instalar todas as dependencias do projeto
+
+- Na AWS, abre as conexões com as portas necessárias com o servidor
+
+-Dentro da pasta do projeto backend executa o comando a seguir para startar
+pm2 start App.js --name=backend
+
+-Dentro da pasta do projeto frontend executa o comando a seguir para startar
+pm2 serve dist 8082 --name=frontend
+
+
+
+
+
+
+
+-Para atualiza o projeto do Site github para o servidor aws
+git pull origin master
+
+-Restarta o processo no servidor
+pm2 restart <nome_do_processo>
+ex: pm2 restart frontend
+
+
+
+-Para apagar uma pasta no servidor
+rm nome_da_pasta -rf
+
+
+
+
+
+
+
+
+
+
+
+
+

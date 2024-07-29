@@ -1,0 +1,23 @@
+#area-principal {
+    text-align: center;
+}
+
+.link{
+    display: block;
+    text-decoration: none;
+    color: darkblue;
+    padding: 20px 100px;
+    margin: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid ;
+    border-radius: 5px;
+    background-color: rgb(212, 255, 255);
+}
+
+.link:hover{
+    transition: 0.25s;
+    background-color: darkblue;
+    color: white;
+}
+

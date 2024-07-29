@@ -1,0 +1,21 @@
+#navbar {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(212, 255, 255);
+    border-bottom: 1px solid #86e3ff;
+  }
+  
+  #navbar h2 {
+    color: rgb(1, 1, 92);
+    font-weight: 900;
+    font-size: 24px;
+  }
+
+  #navbar img {
+    width: 100px;
+  }
+
+
