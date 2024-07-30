@@ -670,7 +670,7 @@ const CreateProva = () => {
             dq40: "D02",
         }
 
-        const res = await provaFetch.post("/provas2", prova)
+        const res = await provaFetch.post("/prova2", prova)
 
         if (res.status === 201) {
             navigate("/sucesso")
@@ -753,7 +753,7 @@ const CreateProva = () => {
                 <input
                     type="text"
                     placeholder="Sem abreviações..."
-                    required onChange={(e) => setNome(e.target.value)} value={nome}
+                    required onChange={(e) => setNome(e.target.value.toUpperCase())} value={nome}
                 />
                 <br />
 

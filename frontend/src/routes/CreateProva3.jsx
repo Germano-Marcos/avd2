@@ -773,7 +773,7 @@ const CreateProva = () => {
                 <input
                     type="text"
                     placeholder="Sem abreviações..."
-                    required onChange={(e) => setNome(e.target.value)} value={nome}
+                    required onChange={(e) => setNome(e.target.value.toUpperCase())} value={nome}
                 />
                 <br />
 
