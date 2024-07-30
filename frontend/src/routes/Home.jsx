@@ -20,6 +20,12 @@ const Home = () => {
         <div>
             <Link to="/prova/new3" className="link">3º ANO</Link>
         </div>
+        {/* <div>
+            <Link to="/prova/1ano" className="link">Provas do 1º ano</Link>
+        </div>
+        <div>
+            <Link to="/prova/2ano" className="link">Provas do 2º ano</Link>
+        </div> */}
         
       </div>
 

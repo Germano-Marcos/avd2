@@ -226,7 +226,7 @@ const prova2Controller = {
         try {
             const provas = await Prova2Model.find();
 
-            res.json(provas2);
+            res.json(provas);
         } catch (error) {
             console.log(error);
         }

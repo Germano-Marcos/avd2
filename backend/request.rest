@@ -51,16 +51,16 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/api/provas
+GET http://localhost:3000/api/prova2
 
 ###
-GET http://localhost:3000/api/provas/66808d983b2d451fedd0bfa3
+GET http://localhost:3000/api/provas/66a8590d7e5cea2d7ee98dc2
 
 ###
 DELETE http://localhost:3000/api/provas/66808d983b2d451fedd0bfa2
 
 ###
-POST http://localhost:3000/api/provas3
+POST http://localhost:3000/api/provas
 Content-Type: application/json
 
 {
@@ -68,7 +68,7 @@ Content-Type: application/json
         "turma": "1º B ADM INT",
         "serie": "2º ANO",
         "notaPortugues": 10.0,
-        "notaMatematica": 7.5,
+        "notaMatematica": 8.0,
         "q1": "C",
         "q2": "B",
         "q3": "B",

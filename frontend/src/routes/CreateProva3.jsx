@@ -860,7 +860,7 @@ const CreateProva = () => {
                         <br />
                         <p className='quesito'>03) A informação principal do Texto 1 está no trecho:</p>
 
-                        <input type="radio" name="q3" id="" value="A" required onClick={(e) => { setDiscQ3("P"), setQ3(e.target.value), setGq3("A"), setDq3("D27") }} />
+                        <input type="radio" name="q3" id="" value="A" required onClick={(e) => { setDiscQ3("P"), setEstiloQ03("quadrado-questao-verde"), setQ3(e.target.value), setGq3("A"), setDq3("D27") }} />
                         <p className='opcao'>“A piscina de águas naturais da Ponta do Farol, no Morro do Moreno, em Vila Velha, virou atração...”.</p>
 
                         <input type="radio" name="q3" id="" value="B" onClick={(e) => { setDiscQ3("P"), setEstiloQ03("quadrado-questao-verde"), setQ3(e.target.value), setGq3("A"), setDq3("D27") }} />
