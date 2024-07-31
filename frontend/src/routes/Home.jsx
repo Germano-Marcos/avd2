@@ -17,9 +17,9 @@ const Home = () => {
         <div>
             <Link to="/prova/new2" className="link">2º ANO</Link>
         </div>
-        <div>
+        {/* <div>
             <Link to="/prova/new3" className="link">3º ANO</Link>
-        </div>
+        </div> */}
         {/* <div>
             <Link to="/prova/1ano" className="link">Provas do 1º ano</Link>
         </div>

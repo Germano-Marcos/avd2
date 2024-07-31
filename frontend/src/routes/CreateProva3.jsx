@@ -817,13 +817,13 @@ const CreateProva = () => {
                         <input type="radio" name="q1" id="" value="A" required onClick={(e) => { setDiscQ1("P"), setEstiloQ01("quadrado-questao-verde"), setQ1(e.target.value), setGq1("B"), setDq1("D14") }} />
                         <p className='opcao'>apresentarem parques ecológicos naturais.</p>
                         <input type="radio" name="q1" id="" value="B" onClick={(e) => { setDiscQ1("P"), setEstiloQ01("quadrado-questao-verde"), setQ1(e.target.value), setGq1("B"), setDq1("D14") }} />
-                        <p className='opcao'>apresentarem parques ecológicos naturais.</p>
+                        <p className='opcao'>citarem atrações turísticas do Espírito Santo.</p>
                         <input type="radio" name="q1" id="" value="C" onClick={(e) => { setDiscQ1("P"), setEstiloQ01("quadrado-questao-verde"), setQ1(e.target.value), setGq1("B"), setDq1("D14") }} />
-                        <p className='opcao'>apresentarem parques ecológicos naturais.</p>
+                        <p className='opcao'>destacarem o turismo na cidade de Vitória.</p>
                         <input type="radio" name="q1" id="" value="D" onClick={(e) => { setDiscQ1("P"), setEstiloQ01("quadrado-questao-verde"), setQ1(e.target.value), setGq1("B"), setDq1("D14") }} />
-                        <p className='opcao'>apresentarem parques ecológicos naturais.</p>
+                        <p className='opcao'>divulgarem as cachoeiras do Espírito Santo.</p>
                         <input type="radio" name="q1" id="" value="E" onClick={(e) => { setDiscQ1("P"), setEstiloQ01("quadrado-questao-verde"), setQ1(e.target.value), setGq1("B"), setDq1("D14") }} />
-                        <p className='opcao'>apresentarem parques ecológicos naturais.</p>
+                        <p className='opcao'>informarem a descoberta de piscinas naturais.</p>
                     </div>
                     {/* =========================================================== */}
 
