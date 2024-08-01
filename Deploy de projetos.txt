@@ -132,7 +132,7 @@ rm nome_da_pasta -rf
 
 
 
-
+Ativar a instância, atualizar o IP no projeto, buildar, atualizar no GIT, atualizar no servidor, fazer o envio de uma prova do 2º com o teste do gabarito.
 
 
 

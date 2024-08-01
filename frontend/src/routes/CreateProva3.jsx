@@ -1718,7 +1718,7 @@ const CreateProva = () => {
                 <div id="q29" className="questao-matematica">
                     <h3>Questão 29</h3>
 
-                    <p className='quesito'>(D-05) Em um determinada ponto da calçada, a 10m de distância de uma árvore, vejo o topo da árvore a uma ângulo de 45°. Observe a ilustração.</p>
+                    <p className='quesito'>(D-05) Em um determinado ponto da calçada, a 10m de distância de uma árvore, vejo o topo da árvore a uma ângulo de 45°. Observe a ilustração.</p>
 
                     <img src={q29_img} alt="" width="100%" />
                     <img src={q29_parte2} alt="" width="" /> <br /> <br />
